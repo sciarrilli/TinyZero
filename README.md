@@ -67,10 +67,10 @@ bash ./scripts/train_tiny_zero.sh
 **3B+ model**
 In this case, the base model is able to develop sophisticated reasoning skills.
 ```
-export N_GPUS=2
-export BASE_MODEL={path_to_your_model}
-export DATA_DIR={path_to_your_dataset}
-export ROLLOUT_TP_SIZE=2
+export N_GPUS=8
+export BASE_MODEL=~/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B/snapshots/3aab1f1954e9cc14eb9509a215f9e5ca08227a9b
+export DATA_DIR=data/countdown
+export ROLLOUT_TP_SIZE=8
 export EXPERIMENT_NAME=countdown-qwen2.5-3b
 export VLLM_ATTENTION_BACKEND=XFORMERS
 

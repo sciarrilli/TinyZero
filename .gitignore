@@ -18,6 +18,9 @@ tensorflow/my_graph/*
 # C extensions
 *.so
 
+# data
+data/
+
 # Distribution / packaging
 .Python
 env/
